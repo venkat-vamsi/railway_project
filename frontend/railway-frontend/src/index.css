@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .aurora-background {
+    background-color: #0b0f19;
+    background-image:
+      radial-gradient(at 27% 37%, hsla(215, 98%, 62%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 97% 21%, hsla(190, 98%, 62%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 70% 90%, hsla(240, 98%, 62%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 33% 50%, hsla(285, 98%, 62%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 75% 30%, hsla(320, 98%, 62%, 0.1) 0px, transparent 50%);
+  }
+
+  .glass-card {
+  @apply bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-20 rounded-2xl shadow-lg;
+}
+
+}
